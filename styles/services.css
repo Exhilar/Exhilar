@@ -1,0 +1,427 @@
+/* ***********Default*********** */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ddd;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header, nav, main, section, footer, article, aside {
+  display: block;
+}
+
+.top {
+  margin: 5px 10px 20px 10px;
+}
+
+.top header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr .5fr;
+      grid-template-columns: 1fr 5fr .5fr;
+}
+
+.top header img {
+  width: 50px;
+  height: 50px;
+}
+
+.top header h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #00aeff;
+  font-size: .9em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-transform: uppercase;
+}
+
+.top header .drop {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.top header .drop .tel {
+  width: 20px;
+  height: 3px;
+  background-color: #00aeff;
+  margin: 3px 0;
+}
+
+.top nav {
+  display: none;
+}
+
+.top nav ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.top nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  color: #35356e;
+  margin-left: 15px;
+}
+
+.top nav ul li a:hover {
+  color: #00aeff;
+  border-bottom: 2px solid #00aeff;
+  padding-bottom: 1px;
+}
+
+main {
+  margin: 30px 10px 20px;
+}
+
+main h2 {
+  margin: 20px 0;
+  color: #00aeff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+main .services .service {
+  cursor: pointer;
+}
+
+main .services .service h3 {
+  color: #00aeff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+main .services .service img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  background: #00aeff;
+  color: white;
+  padding: 30px 10px 0;
+}
+
+footer .logo {
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr;
+      grid-template-columns: 1fr 8fr;
+}
+
+footer .logo img {
+  width: 70px;
+}
+
+footer .logo h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+footer .about-laund .contact .location, footer .about-laund .contact .phone, footer .about-laund .contact .email {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 12fr;
+      grid-template-columns: 1fr 12fr;
+}
+
+footer .about-laund .contact .phone {
+  margin: 20px 0;
+}
+
+footer .about-laund .about {
+  margin-top: 20px;
+  -ms-grid-row-align: start;
+      align-self: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+footer .about-laund .about a {
+  width: 100px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+footer .about-laund .about a:hover {
+  text-decoration: underline;
+}
+
+footer .about-laund .about a:nth-of-type(even) {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+footer .about-laund .about a:nth-of-type(odd) {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+footer .about-laund .social {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer .about-laund .social a:nth-of-type(2) {
+  margin: 0 15px;
+}
+
+footer .copyright {
+  text-align: center;
+  color: white;
+  font-size: .8em;
+  margin-bottom: 10px;
+}
+
+footer .backtotop {
+  color: white;
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+/* ***********Desktop*********** */
+@media screen and (min-width: 768px) {
+  .top {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.2fr 2fr;
+        grid-template-columns: 1.2fr 2fr;
+    margin: 0 50px 50px 50px;
+  }
+  .top header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 5fr;
+        grid-template-columns: 1fr 5fr;
+  }
+  .top header img {
+    width: 50px;
+    height: 50px;
+  }
+  .top header h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #00aeff;
+    font-size: 1.3em;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-transform: uppercase;
+  }
+  .top header .tel {
+    display: none;
+  }
+  .top nav {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    display: block;
+    border: none;
+  }
+  .top nav ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  .top nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #35356e;
+    margin-left: 15px;
+  }
+  .top nav ul li a:hover {
+    color: #00aeff;
+    border-bottom: 2px solid #00aeff;
+    padding-bottom: 5px;
+  }
+  main {
+    margin: 30px 50px;
+  }
+  main h2 {
+    margin: 20px 0;
+    color: #00aeff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  main .services {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2em;
+  }
+  main .services .service {
+    cursor: pointer;
+  }
+  main .services .service h3 {
+    color: #00aeff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  main .services .service img {
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+  }
+  footer {
+    background: #00aeff;
+    color: white;
+    padding: 30px 50px 0;
+  }
+  footer .logo {
+    margin-bottom: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 9fr;
+        grid-template-columns: 1fr 9fr;
+  }
+  footer .logo img {
+    width: 100px;
+  }
+  footer .logo h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  footer .about-laund {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4em;
+  }
+  footer .about-laund .contact .location, footer .about-laund .contact .phone, footer .about-laund .contact .email {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10fr;
+        grid-template-columns: 1fr 10fr;
+  }
+  footer .about-laund .contact .phone {
+    margin: 20px 0;
+  }
+  footer .about-laund .about {
+    -ms-grid-row-align: start;
+        align-self: start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  footer .about-laund .about a {
+    width: 100px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  footer .about-laund .about a:hover {
+    text-decoration: underline;
+  }
+  footer .about-laund .about a:nth-of-type(even) {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer .about-laund .about a:nth-of-type(odd) {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer .about-laund .social {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .about-laund .social a:nth-of-type(2) {
+    margin: 0 15px;
+  }
+  footer .copyright {
+    text-align: right;
+    color: white;
+    font-size: .8em;
+    margin-bottom: 10px;
+  }
+  footer .backtotop {
+    color: white;
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    /* Modal Content */
+  }
+  .modal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .modal .modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .modal .modal-content .close:hover, .modal .modal-content .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=services.css.map */
